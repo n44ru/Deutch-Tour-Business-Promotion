@@ -1,0 +1,81 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Galeria
+ *
+ * @ORM\Table(name="galeria", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})})
+ * @ORM\Entity
+ */
+class Galeria
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen1", type="string", length=255, nullable=true)
+     */
+    private $imagen1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen2", type="string", length=255, nullable=true)
+     */
+    private $imagen2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen3", type="string", length=255, nullable=true)
+     */
+    private $imagen3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen4", type="string", length=255, nullable=true)
+     */
+    private $imagen4;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen5", type="string", length=255, nullable=true)
+     */
+    private $imagen5;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen6", type="string", length=255, nullable=true)
+     */
+    private $imagen6;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen7", type="string", length=255, nullable=true)
+     */
+    private $imagen7;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen8", type="string", length=255, nullable=true)
+     */
+    private $imagen8;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

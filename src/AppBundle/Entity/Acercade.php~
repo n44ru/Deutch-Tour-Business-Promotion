@@ -1,0 +1,53 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Acercade
+ *
+ * @ORM\Table(name="acercade", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})})
+ * @ORM\Entity
+ */
+class Acercade
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="textoes", type="string", length=1000, nullable=true)
+     */
+    private $textoes;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="textoen", type="string", length=255, nullable=true)
+     */
+    private $textoen;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="textode", type="string", length=255, nullable=true)
+     */
+    private $textode;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen", type="string", length=255, nullable=true)
+     */
+    private $imagen;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

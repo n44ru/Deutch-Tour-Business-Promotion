@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Acercade" table="acercade">
+    <unique-constraints>
+      <unique-constraint name="id" columns="id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="textoes" type="string" column="textoes" length="1000" nullable="true"/>
+    <field name="textoen" type="string" column="textoen" length="255" nullable="true"/>
+    <field name="textode" type="string" column="textode" length="255" nullable="true"/>
+    <field name="imagen" type="string" column="imagen" length="255" nullable="true"/>
+  </entity>
+</doctrine-mapping>
